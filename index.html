@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>20年遠回りした話</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #f5f5f0;
+    color: #1a1a1a;
+    padding: 40px 20px;
+  }
+
+  /* ===== 共通パーツ ===== */
+  .page { max-width: 760px; margin: 0 auto 80px; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+  .page-header { padding: 36px 40px 28px; position: relative; }
+  .page-content { padding: 0 40px 40px; }
+
+  .badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; padding: 4px 12px; border-radius: 999px; margin-bottom: 10px; }
+  .page-title { font-family: 'Noto Serif JP', serif; font-size: 28px; font-weight: 700; line-height: 1.4; margin-bottom: 8px; }
+  .page-subtitle { font-size: 14px; color: #666; line-height: 1.7; }
+
+  .section { margin-bottom: 36px; }
+  .section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 6px; }
+  .section h2 { font-size: 20px; font-weight: 700; margin-bottom: 14px; line-height: 1.4; border-left: 4px solid #16a34a; padding-left: 12px; }
+  .body-text { font-size: 15px; color: #333; line-height: 2.0; margin-bottom: 18px; text-align: justify; }
+
+  .divider { border: none; border-top: 2px dashed #e0e0e0; margin: 36px 0; }
+
+  /* カード系 */
+  .card { border-radius: 12px; padding: 20px; margin-bottom: 16px; background: #f0fdf4; border: 1px solid #bbf7d0; }
+  .card.featured { background: #dcfce7; border: 2px solid #16a34a; text-align: center; padding: 26px 20px; }
+
+  /* 番号付きステップ */
+  .step-list { display: flex; flex-direction: column; gap: 16px; margin-top: 18px; }
+  .step-item { display: flex; gap: 14px; align-items: flex-start; background: #f9fafb; padding: 18px; border-radius: 12px; border: 1px solid #f3f4f6; }
+  .step-num { width: 28px; height: 28px; min-width: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; margin-top: 2px; }
+  .step-content .step-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .step-content .step-desc { font-size: 14.5px; color: #444; line-height: 1.8; }
+
+  /* まとめボックス */
+  .summary-box { border-radius: 14px; padding: 24px 28px; margin-top: 28px; }
+
+  /* ===== カラーテーマ（グリーン） ===== */
+  .theme-green .page-header { background: linear-gradient(135deg, #14532d 0%, #16a34a 100%); color: #fff; }
+  .theme-green .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-green .page-title { color: #fff; }
+  .theme-green .page-subtitle { color: rgba(255,255,255,0.75); }
+  .theme-green .section-label { color: #16a34a; }
+  .theme-green .section h2 { color: #14532d; border-left-color: #16a34a; }
+  .theme-green .step-num { background: #16a34a; color: #fff; }
+  .theme-green .summary-box { background: #f0fdf4; border: 2px solid #bbf7d0; }
+
+  .text-bold-green { color: #16a34a; font-weight: 700; }
+  .emphasis-text { font-size: 22px; font-weight: 700; color: #14532d; margin-bottom: 4px; display: block; letter-spacing: 0.05em; }
+</style>
+</head>
+<body>
+
+<div class="page theme-green">
+  <div class="page-header">
+    <span class="badge">⏳ MY STORY</span>
+    <h1 class="page-title">私は20年もの時間を、<br>遠回りしてしまいました。</h1>
+    <p class="page-subtitle">あなたには、私と同じ過ちや無駄な時間を使ってほしくありません。</p>
+  </div>
+
+  <div class="page-content">
+
+    <div class="section" style="margin-top: 30px;">
+      <p class="body-text">
+        今だからこそ、こうして自信を持って「大人の男磨き」や「洗練されたマインド」について発信できていますが、ここに至るまでには本当に、気が遠くなるほど長い年月がかかりました。🐢
+      </p>
+      
+      <p class="body-text">
+        ネットに溢れる情報に惑わされ、正しい方法も本質も知らず、ただがむしゃらに自己流で突き進んだ結果、気づけば<span class="text-bold-green">20年という莫大な時間</span>と、莫大なコストをドブに捨てていたのです。今振り返るだけでも、あまりの無駄さに血の気が引く思いがします。😭
+      </p>
+    </div>
+
+    <!-- 強調カード -->
+    <div class="card featured">
+      <span style="font-size: 14px; color: #14532d; display: block; margin-bottom: 8px; font-weight: 500;">私が20年の闇を抜けて学んだ、最大の教訓。それは……</span>
+      <span class="emphasis-text">「自己流こそが、人生において<br>一番の遠回りである」</span>
+      <span style="font-size: 14px; color: #14532d; display: block; margin-top: 8px; font-weight: 500;">という、あまりにも残酷な事実です。⚠️</span>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟢 遠回りの原因</div>
+      <h2>なぜ私は20年も彷徨ってしまったのか？</h2>
+      <p class="body-text">理由は非常にシンプルです。当時の私は、男として変わろうとしながらも、以下のような「致命的な罠」にすべて綺麗にハマっていたからでした。👇</p>
+      
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#dc2626;">✕</div>
+          <div class="step-content">
+            <div class="step-title" style="color:#dc2626;">謎のプライドが邪魔をして、他人に頼れなかった</div>
+            <div class="step-desc">「男なら自分一人で解決してナンボ」「人に教わるのは格好悪い」という根拠のない頑固さが、正しい知識や本質的なフィードバックを取り入れる最大の障壁になっていました。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#dc2626;">✕</div>
+          <div class="step-content">
+            <div class="step-title" style="color:#dc2626;">目の前の「楽そうな小手先の情報」ばかり追った</div>
+            <div class="step-desc">内面を磨くことや女性の本質を理解するという泥臭い努力から逃げ、「これさえ言えばモテる」といった薄っぺらいセリフや小手先のノウハウばかりを探し求める、ノウハウコレクターになっていました。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#dc2626;">✕</div>
+          <div class="step-content">
+            <div class="step-title" style="color:#dc2626;">失敗を恐れるあまり、行動のスピードが遅すぎた</div>
+            <div class="step-desc">「完璧に準備してから動こう」「傷つきたくない」と言い訳ばかりして、打席に立つのを先延ばしにしていました。行動しないため経験値もたまらず、ただ時間だけが無情に過ぎていきました。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟢 あなたへ伝えたいこと</div>
+      <h2>あなたには、私の失敗を踏み台にしてほしい</h2>
+      <p class="body-text">
+        時間は有限です。そして、私たち大人の人生において、20年という時間はあまりにも重く、二度と取り戻せない貴重な財産です。⏳
+      </p>
+      <p class="body-text">
+        もし、今のあなたに「本気で現状を変えたい」「周りを見返せるくらいの魅力的な大人の男になりたい」という強い気持ちがあるなら、どうか私のこの20年間の泥臭い失敗談を、すべて踏み台にしてください。🚀
+      </p>
+      <p class="body-text">
+        私が膨大な時間とお金を失いながら泥水をすすり、ようやく導き出した**「本当に必要な男磨きの本質」**。これをあなたに最短距離でお渡しします。あなたが同じ痛みを味わう必要は一切ありません。
+      </p>
+    </div>
+
+    <!-- フッターまとめボックス -->
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#16a34a;margin-bottom:8px;">📌 魂のメッセージ</div>
+      <p style="font-size:14.5px;color:#14532d;line-height:1.9; font-weight: 500;">
+        自己流で悩むのは、今日でもう終わりにしましょう。年齢を言い訳にして「もう遅い」なんて縮こまる必要はどこにもありません。私を徹底的に使い倒して、一気に最短ルートの階段を駆け上がりましょう！あなたの本気の挑戦を、私は全力でサポートします。🔥
+      </p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
